@@ -1,0 +1,124 @@
+\documentclass{resume}
+\ResumeName{这里是你的名字或者标题}
+
+\begin{document}%简历开始，下面是主体
+
+\ResumeContacts{
+  (+86) 188-8888-8888电话部分,%
+  \ResumeUrl{mailto:xxx@gmail.com}{xxx@gmail.com}\\
+  %这是超链接文字，\ResumeUrl{这里写网址或者邮箱，想跳转邮箱的话记得加上mailto:，记得是英文的冒号，然后加上邮箱地址}{文本内容，显示在PDF上}
+  %每个部分之间记得加逗号，可以自动生成间隔符
+  \ResumeUrl{https://github.com/Michael-Jetson}{GitHub主页：https://github.com/Michael-Jetson}\footnote{下划线内容包含超链接。},%
+  \ResumeUrl{https://pengfeiguo.top}{个人主页：https://pengfeiguo.top}\footnote{正在建设当中}
+}
+
+\ResumeTitle
+
+\section{研究兴趣}%每一个部分就是一个section
+三维感知，多模态学习，自动驾驶，计算机视觉
+
+
+\section{教育经历}
+%\ResumeItem
+%[北京理工大学大学|硕士研究生]
+%{北京理工大学}
+%[\textnormal{网络空间安全，网络空间安全学院|}  学术型硕士研究生]
+%[2021.09 - 2024.06（预计）]
+
+%主要研究方向为\textbf{拜占庭共识算法}，在区块链和分布式系统领域方面有一定的研究和工程经验。\textbf{2024年应届生}。
+
+\ResumeItem
+{华北电力大学(211工程)}
+[\textnormal{自动化系|测控技术与仪器|} 工学学士]
+[2019.09 - 2023.07]
+
+
+
+
+%\section[技术能力]{技术能力\protect\footnote{与求职岗位无关的技能省略或用灰色表示。}}
+%\begin{itemize}
+%  \item \textbf{前后端}: Rust, Golang, Python, MySQL, \GrayText{React, Vue.js, HTML/CSS}
+%  \item \textbf{运维}: Docker, Linux, Shell, Kubernetes.
+%  \item \textbf{关键词}: Tokio.rs, Consensus Algorithm, Vim, Git, Kafka, Markdown, \GrayText{Next.js}, \GrayText{\LaTeX}, \GrayText{Django}
+%\end{itemize}
+
+\section{学术成果}
+\begin{itemize}
+  %\item \textbf{Pengfei Guo}, Ziheng Hou, Wenhai Liu, Mengshuai Cao, Wenchao Wu，Family service robot intellisense and autonomous navigation technology research，ICAIR 2022，EI检索
+  \item \textbf{虢鹏飞}，曹梦帅，蒋昊轩，苏越，于琳竹.一种用于无人机的太阳能电池板保护装置.ZL 2022 2 1099247.X
+  \item 张善驰，田景佳，吴景玮，\textbf{虢鹏飞}.一种农情监测用无人机.ZL 2022 2 2900534.2
+  \item 武文朝,\textbf{虢鹏飞},李梓,程浩华,李天宇,吴驰程,于骁,施鉴芩,刘凤,葛川民.一种电力设备监测装置.202320149139.7
+\end{itemize}
+\section{科研经历}
+\ResumeItem{上海科技大学}
+[信息科学与技术学院 | 4DV Lab | 访问生（导师：马月昕）][2023.07 - 2023.10]
+\begin{itemize}
+    \item 负责LiDAR\&Camera融合的Visual Grounding项目，对代码进行优化，同时在学长带领下学习和钻研BEV和3D Perception方面的学术前沿
+    \item 参与机械臂视觉抓取项目中，负责多相机融合的数据采集与处理，学习三维重建和NeRF知识
+\end{itemize}
+\section{项目经历}
+
+%\ResumeItemNew{\textbf{WildRefer}:3D Object Localization in Large-scale Dynamic Scenes with Multi-modal}[][2023.08 - 至今] 
+%\begin{itemize}
+  %\item 使用图像、点云和自然语言三种模态的数据，对动态大场景进行感知，定位语言所描述的目标
+  %\item 研究Visual Grounding方面的工作，并且尝试提出改进点，同时检验GPT所扩充的数据集
+%\end{itemize}
+\ResumeItem{自动驾驶融合感知仿真}[][2023.05 - 2023.10]
+\begin{itemize}
+    \item 学习并使用Carla和Gazebo模拟器，构建虚拟城市环境，在其中进行自动驾驶感知与导航任务模拟
+    \item 使用ROS、Autoware、PyTorch等框架构建智能算法，完成车辆的自主感知与导航，使用现成规划器完成自主泊车等简易自动驾驶任务
+    \item 学习并部署BEVFusion、BEVFormer等自动驾驶感知算法，完成车辆的环境理解任务
+\end{itemize}
+\ResumeItem{多智能体环境与建模（与军事科学院合作）}
+[方案设计与设备选型]
+[2021.11 - 2022.10] 
+
+\begin{itemize}
+  \item 加入导师领导的团队，项目主题是多无人机协同对地目标检测与搜索。
+  \item 参与项目的解决方案设计、硬件选型，和解决环境部署的问题。
+  \item 与第三方公司和军事科学院进行沟通和协商，推进项目的进度。
+\end{itemize}
+
+
+\ResumeItem{基于SLAM与计算机视觉的自主导航机器人}[项目技术负责人][2021.01 - 2023.05] 
+
+\begin{itemize}
+  \item 成功申请并主持（或参与）大创五项和河北省科技厅大学生科创项目两项，负责项目方案设计与视觉代码部署
+  \item 作为队长参与多项竞赛，带领学校首次参与智能车讯飞赛道的队伍取得全国第十五名的成绩。
+  \item 学习并使用Orb-SLAM、YOLOv5等多种 SLAM 和视觉算法使机器人在复杂环境中进行自主导航和目标搜索
+\end{itemize}
+
+\ResumeItem{\textbf{RoboMaster}机甲大师步兵项目}
+[项目负责人]
+[2022.09 - 2023.05] 
+
+\begin{itemize}
+  \item 担任学校 RM 队伍创始人和队长，参与并负责部署视觉部分的工程
+\end{itemize}
+\ResumeItem{\textbf{Kaggle}竞赛：PetFinder.my - Pawpularity Contest}[铜牌/队员][2022.01 - 2022.03] 
+\ResumeItem{\textbf{Kaggle}竞赛：Image Matching Challenge 2023}[铜牌/队员][2023.05 - 2023.06] 
+
+
+
+
+\section{荣誉获奖}
+
+\ResumeItem{2021年全国工程机器人大赛暨国际公开赛一等奖}[国家级/队员][2021.03 - 2021.10] 
+\ResumeItem{2022年全国大学生智能汽车竞赛全国总决赛二等奖}[国家级/队长][2022.05 - 2022.08] 
+\ResumeItem{2021-2022年华北电力大学科技创新优秀奖}
+\ResumeItem{2020-2023年参加工创赛等竞赛，获省奖七项，主持或参加大创六项、科技厅大学生科创项目两项}
+
+
+\section{社团经历}
+\ResumeItem{自动化与人工智能俱乐部（A\&AI俱乐部）}[创始人兼技术负责人][2022.09 - 2023.06]
+
+
+\section{专业技能}
+\begin{itemize}
+    \item \textbf{英语：}CET4
+    \item \textbf{编程：}C/C++，Python，MATLAB，LaTeX
+    \item \textbf{软件技能：}CMake，PyTorch，ROS，TensorRT，Autoware，PCL，Open3D
+\end{itemize}
+
+
+\end{document}
