@@ -1,0 +1,16 @@
+\begin{enumerate}[]
+    \item
+    由题目已知可得：
+    \( \sigma_x = 10000 \, \text{psi} \), 
+    \( \sigma_y = 0 \, \text{psi} \), 
+    \( \tau_{xy} = 0 \, \text{psi} \)\\
+    使用平面应力变换公式来计算斜面上的应力分量：
+    \[\sigma_x' = \frac{\sigma_x + \sigma_y}{2} + \frac{\sigma_x - \sigma_y}{2} \cos(2\alpha) + \tau_{xy} \sin(2\alpha)\]
+    \[\sigma_y' = \frac{\sigma_x + \sigma_y}{2} - \frac{\sigma_x - \sigma_y}{2} \cos(2\alpha) - \tau_{xy} \sin(2\alpha)\]
+    \[\tau_{x'y'} = - \frac{\sigma_x - \sigma_y}{2} \sin(2\alpha) + \tau_{xy} \cos(2\alpha)\]
+    因为初始角度为45°，所以$\alpha=15^{\circ}$，代入上式可得：
+    \[\sigma_x' = \frac{10000 + 0}{2} + \frac{10000 - 0}{2} \cos(2*15) + 0 * \sin(2*15) = 9330\text{psi}\]
+    \[\sigma_y' = \frac{10000+ 0}{2} - \frac{10000 - 0}{2} \cos(2*15) - 0 * \sin(2*15) = 670\text{psi}\]
+    \[\tau_{x'y'} = - \frac{10000 - 0}{2} \sin(2*15) + 0 \cos(2*15) = -2500\text{psi}\]
+\end{enumerate}
+

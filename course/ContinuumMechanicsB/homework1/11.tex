@@ -1,0 +1,33 @@
+\begin{enumerate}[(a)]
+    \item 
+    主应力公式为：
+    \[\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left( \frac{\sigma_x - \sigma_y}{2} \right)^2 + \tau_{xy}^2}\]
+
+    将已知代入算得
+    \[\sigma_1 = \frac{-14000 + 6000}{2} + \sqrt{\left( \frac{-14000 - 6000}{2} \right)^2 +{(-17320)}^2 } = 16012.8 \, \text{psi}\]
+    \[\sigma_2 = \frac{-14000 + 6000}{2} - \sqrt{\left( \frac{-14000 - 6000}{2} \right)^2 +{(-17320)}^2} = -24012.8 \, \text{psi}\]
+    主应力方向为：
+
+    \[\tan(2\alpha) = \frac{2\tau_{xy}}{\sigma_x - \sigma_y}\]
+    \[\tan(2\alpha) = \frac{2(-17320)}{-14000 - 6000} = \frac{-34,640}{-20000} = 1.732\]
+    \[2\alpha = \tan^{-1}(1.732) = 60^\circ\]
+    \[\alpha = \frac{60^\circ}{2} = 30^\circ\]
+
+    因此，主应力的方向为 \( \alpha = 30^\circ \)。
+    \item 
+    旋转后的应力分量公式为：
+
+    \[\sigma_x' = \frac{\sigma_x + \sigma_y}{2} + \frac{\sigma_x - \sigma_y}{2} \cos(2\alpha) + \tau_{xy} \sin(2\alpha)\]
+
+    \[\sigma_y' = \frac{\sigma_x + \sigma_y}{2} - \frac{\sigma_x - \sigma_y}{2} \cos(2\alpha) - \tau_{xy} \sin(2\alpha)\]
+
+    \[\tau_{x'y'} = -\frac{\sigma_x - \sigma_y}{2} \sin(2\alpha) + \tau_{xy} \cos(2\alpha)\]
+
+    当 \( \alpha = 45^\circ \) 时应力分量为：
+
+    \[\sigma_x' = \frac{-14000 + 6000}{2} + \frac{-14000 - 6000}{2} \cdot 0 + (-17320) \cdot 1 = -4000 + 0 - 17320 = -21320 \, \text{psi}\]
+
+    \[\sigma_y' = \frac{-14000 + 6000}{2} - \frac{-14000 - 6000}{2} \cdot 0 - (-17320) \cdot 1 = -4000 + 0 + 17320 = 13320 \, \text{psi}\]
+
+    \[\tau_{x'y'} = -\frac{-14000 - 6000}{2} \cdot 1 + (-17320) \cdot 0 = 10000 + 0 = 10000 \, \text{psi}\]
+\end{enumerate}

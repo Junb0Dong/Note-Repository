@@ -1,0 +1,54 @@
+\begin{enumerate}[(a)]
+    \item 
+    由已知可得：
+    \[
+    \mathbf{\sigma} = \begin{bmatrix}
+    \sigma_x & \tau_{xy} & \tau_{xz} \\
+    \tau_{xy} & \sigma_y & \tau_{yz} \\
+    \tau_{xz} & \tau_{yz} & \sigma_z
+    \end{bmatrix}
+    = \begin{bmatrix}
+    10 & 5 & -10 \\
+    5 & 20 & -15 \\
+    -10 & -15 & -10
+    \end{bmatrix}
+    \]
+    因为
+    \[a_{11}^2 + a_{21}^2 + a_{31}^2 = 1\]
+    所以
+    \[a_{31}^2 = \frac{1}{4}, \quad a_{31} = \frac{1}{2} \quad \text{(题目条件给出 \( a_{31} \) is positive)}.\]
+    于是
+    \[
+    \mathbf{a} = \begin{bmatrix}
+    \frac{1}{2} \\
+    \frac{1}{\sqrt{2}} \\
+    \frac{1}{2}
+    \end{bmatrix}
+    \]
+    于是可以得到 \( \mathbf{p} \):
+    \[
+    \mathbf{p} = \begin{bmatrix}
+    3.54 \\
+    8.64 \\
+    -20.61
+    \end{bmatrix} \, \text{psi}
+    \]
+    于是可以求得The magnitude of \( \mathbf{p} \) is:
+    \[
+    |\mathbf{p}| = \sqrt{p_1^2 + p_2^2 + p_3^2} = \sqrt{3.54^2 + 8.64^2 + (-20.61)^2}\approx 22.62\, \text{psi}
+    \]
+    \item 
+    因为：
+    \[\sigma = \mathbf{p} \cdot \mathbf{a} = p_1 a_{11} + p_2 a_{21} + p_3 a_{31}\]
+    \[\sigma = -2.43 \, \text{psi}\]
+
+    \( \tau \) 的大小为:
+    \[\tau = \sqrt{|\mathbf{p}|^2 - \sigma^2} = \sqrt{22.62^2 - (-2.43)^2} = \sqrt{511.92 - 5.9} = \sqrt{506.02} \approx 22.49 \, \text{psi}\]
+
+    \item 
+    因为：
+    \[\cos \theta = \frac{\sigma}{|\mathbf{p}|}\]
+    \[\cos \theta = \frac{-2.43}{22.62} = -0.107\]
+    \[\theta = \cos^{-1}(-0.107) = 96.13^\circ\]
+    由上式可得，$P$和$\sigma$之间的角度为\( 96.13^\circ \).
+\end{enumerate}
