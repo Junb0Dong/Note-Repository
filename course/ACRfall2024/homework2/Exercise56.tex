@@ -1,0 +1,43 @@
+\begin{enumerate}[(a)]
+    \item 
+    由题目已知，可以求得\[^s\omega=\begin{bmatrix}
+        0\\1\\0\\
+    \end{bmatrix}, {}^sv = \begin{bmatrix}
+        0\\0\\0 \end{bmatrix}\]
+    得到，\[^sV=\begin{bmatrix}
+        ^s\omega \\ ^sv\\
+    \end{bmatrix} = \begin{bmatrix}
+        0\\1\\0\\0\\0\\0\\
+    \end{bmatrix}\]
+    同理，可以得到\[{}^bV_b=\begin{bmatrix}
+        0 \\ 0 \\ 1 \\ 0 \\ 10 \\ 0\\
+    \end{bmatrix}\]
+    又因为
+    \[{}^bV_s={}^bX_s{}^sV\]其中\[{}^bX_s = \begin{bmatrix}
+        R & 0 \\ [p]R & R
+    \end{bmatrix}\]
+    由图可知，\[{}^bR_s = \begin{bmatrix}
+        \cos t & \sin t & 0 \\
+        -\sin t & \cos t & 0 \\
+        0 & 0 & 1\\
+    \end{bmatrix}, p = \begin{bmatrix}
+        -10 \\ 0 \\ 20 \\ 
+    \end{bmatrix}\]
+    所以可以得到\[{}^bV = {}^bV_b + {}^bV_s = \begin{bmatrix}
+        {}^b\omega \\ {}^bv
+    \end{bmatrix}
+    \begin{bmatrix}
+        \sin t \\ \cos t \\ 1 \\ -20\cos t \\ 20\sin t + 10 \\ -10\cos t \\
+    \end{bmatrix}\]
+    Therefore, \[{}^b\omega = \begin{bmatrix}
+        \sin t \\ \cos t \\ 1 \\
+    \end{bmatrix},
+    {}^bv = \begin{bmatrix}
+    -20\cos t \\ 20\sin t + 10 \\ -10\cos t \\
+    \end{bmatrix}
+    \]
+    \item 
+    \[\dot{p} = {}^sR_bv_b = \begin{bmatrix}
+        -20 \cos t - 20 \cos t \sin t \\ 10 \cos t \\ 20 \sin t + 10 \sin^2t- 10 \cos^2t \\
+    \end{bmatrix}\]
+\end{enumerate}

@@ -1,0 +1,37 @@
+\begin{enumerate}[(a)]
+    \item What is the linear velocity of the point \(C\)?\\
+    \[v_{Cx} = \frac{dC_x(t)}{d_t} = v\]
+    因此，\[v_C = \begin{bmatrix}
+        -v \\ 0 \\ 0 \\
+    \end{bmatrix}\]
+    \item What is the linear velocity of the point $A$?\\
+    同(a)可得，\[v_A = \begin{bmatrix}
+        v \\ 0 \\ 0 \\
+    \end{bmatrix}\]
+    \item What is velocity of the body-fixed point currently coincides with $C$?\\
+    \[v_c = v_o + \omega \times \overrightarrow{roC} = \begin{bmatrix}
+        0 \\ 0 \\ 0 \\
+    \end{bmatrix}\]
+    \item What is velocity of the body-fixed point currently coincides with $A$?\\
+    同(c)可得，\[v_A = v_o + \omega \times \overrightarrow{roA} = \begin{bmatrix}
+        2v \\ 0 \\ 0 \\
+    \end{bmatrix}\]
+    \item What is the spatial velocity of the cylinder in $\text{\{0\}-frame}$?\\
+    \[{}^0V = \begin{bmatrix}
+        {}^0\omega \\ {}^0v \\ 
+    \end{bmatrix}\]
+    其中，\[{}^0\omega = \begin{bmatrix}
+        0 \\ \omega \\ 0 \\
+    \end{bmatrix}, {}^0v = 0 + {}^0\omega \times  C_x(t)\]
+    所以，可得\[{}^0V = \begin{bmatrix}
+        0 \\ \frac{v}{r} \\ 0 \\ 0 \\ 0 \\ -\frac{vC_x(t)}{r} \\
+    \end{bmatrix}\]
+    \item What is the spatial velocity of the cylinder in frame $\{C\}$?\\
+    同(e)可得，\[{}^CV = \begin{bmatrix}
+        {}^C\omega \\ {}^Cv
+    \end{bmatrix}\], 其中
+    \[{}^Cv = v + {}^C\omega \times \overrightarrow{roC}\]
+    所以，可得\[{}^0V = \begin{bmatrix}
+        0 \\ \frac{v}{r} \\ 0 \\ 0 \\ 0 \\ 0 \\
+    \end{bmatrix}\]
+\end{enumerate}

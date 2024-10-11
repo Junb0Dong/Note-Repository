@@ -1,0 +1,25 @@
+\begin{enumerate}[(a)]
+    \item 
+    由图可知，\(p_a = P_{ab} + r_a\)，所以\[r_a = p_a - P_{ab}\]
+    其中，\(P_{ab}\)可以由\(^AT_B\)得出为\(\begin{bmatrix} -100\\300\\500 \end{bmatrix}\)
+    所以\[r_a = \begin{bmatrix}100\\500\\-500 \\ \end{bmatrix}\]
+    又因为
+    \[r_b = ^BR_A*r_a\]
+    \[^BR_A={(^AR_B)}^{-1}= \begin{bmatrix} 0 & 1 & 0  \\ -1 & 0 & 0  \\ 0 & 0 & 1 \\ \end{bmatrix}\]
+    所以\[r_b = \begin{bmatrix}
+        500 \\ -100 \\ -500
+    \end{bmatrix}\]
+    \item 
+    由图可知，\[^AT_C = \begin{bmatrix}
+        1 & 0 & 0 & 0\\
+        0 & \frac{\sqrt{3}}{2} & -\frac{1}{2} & 800\\
+        0 & \frac{1}{2} & \frac{\sqrt{3}}{2} & 0\\
+        0 & 0 & 0 & 1
+    \end{bmatrix}\]
+    所以，\[T_{bc} = ^BT_C = ^BT_A * ^AT_C = (^BT_A)^{-1} * ^AT_C = \begin{bmatrix}
+        0 & \frac{\sqrt{3}}{2} & -\frac{1}{2} & 500\\
+        -1 & 0 & 0 & -100 \\
+        0 & \frac12 & \frac{\sqrt{3}}{2} & -500 \\
+        0 & 0 & 0 & 1\\
+    \end{bmatrix}\]
+\end{enumerate}
