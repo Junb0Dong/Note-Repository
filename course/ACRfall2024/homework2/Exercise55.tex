@@ -1,13 +1,13 @@
 \begin{enumerate}[(a)]
     \item 
-    由几何关系可知:\[^sP==(L+d \sin \theta) \hat{\mathrm{x}}_{\mathrm{s}}+(L-d \cos \theta) \hat{\mathrm{y}}_{\mathrm{s}} \]
+    From the geometric relationship, we can know that: \[{}^sP=(L+d \sin \theta) \hat{\mathrm{x}}_{\mathrm{s}}+(L-d \cos \theta) \hat{\mathrm{y}}_{\mathrm{s}} \]
     \item 
-    the velocity of point P is : \[\frac{d_{^sP}}{d_t} = \begin{bmatrix}
+    the velocity of point P is : \[\frac{d_{{}^sP}}{d_t} = \begin{bmatrix}
         d\dot{\theta}\cos\theta\\ d\dot{\theta}\sin\theta \\ 0
     \end{bmatrix}\]
     \item 
-    \[t_{sb} = ^sT_b = \begin{bmatrix}
-        ^sR_b & P \\
+    \[t_{sb} = {}^sT_b = \begin{bmatrix}
+        {}^sR_b & P \\
         0 & 1\\
     \end{bmatrix} =
     \begin{bmatrix}
@@ -17,30 +17,30 @@
         0 & 0 & 0 & 1\\
     \end{bmatrix}\]
     \item 
-    因为
+    Because: 
     \[^bV = \begin{bmatrix}
         ^b\omega\\^bv_{ob}
     \end{bmatrix} \]
-    其中，\[^bv_{ob} = \omega * \overrightarrow{rob}\]
-    所以,\[^bV = \begin{bmatrix}^b\omega\\^bv_{ob}\end{bmatrix} = \begin{bmatrix}
+    where, \[^bv_{ob} = \omega * \overrightarrow{rob}\]
+    so, \[^bV = \begin{bmatrix}^b\omega\\^bv_{ob}\end{bmatrix} = \begin{bmatrix}
     0 \\ 0 \\ \dot{\theta} \\ d\dot{\theta} \\ 0 \\ 0
     \end{bmatrix}\]
     \item 
-    同(d)问，\[^sV = \begin{bmatrix}
+    Similarly to (d) \[^sV = \begin{bmatrix}
     ^s\omega\\^sv_{os}
     \end{bmatrix} \]
-    其中，\[^sv_{os} = \omega * \overrightarrow{ros}\]
-    所以,\[^sV = \begin{bmatrix}^s\omega\\^sv_{os}\end{bmatrix} = \begin{bmatrix}
+    where, \[^sv_{os} = \omega * \overrightarrow{ros}\]
+    so, \[^sV = \begin{bmatrix}^s\omega\\^sv_{os}\end{bmatrix} = \begin{bmatrix}
     0 \\ 0 \\ \dot{\theta} \\ L\dot{\theta} \\ -L\dot{\theta} \\ 0
     \end{bmatrix}\]
     \item 
-    可以得出结论 \[^sV= ^sX_b * ^bV \]
-    其中
+    It can be concluded that \[^sV= ^sX_b * ^bV \]
+    where, 
     \[^sX_b = ^sT_b = \begin{bmatrix}
         R & 0 \\ [p]R & R
     \end{bmatrix} \]
     \item 
-    因为\(^bV_p = ^sR_b^{-1} * ^sV_p\)，而\(^sR_b\text{是}T_{sb}\)的旋转矩阵，这是它们之间的关系。
+    Because \(^bV_p = ^sR_b^{-1} * ^sV_p\), and \(^sR_b\text{is}T_{sb}\), this is the relationship between them.
     \item 
-    因为\(^sV_{os} = ^sV_p + ^s\omega \times \overrightarrow{opos}\)
+    Beacuse \(^sV_{os} = ^sV_p + ^s\omega \times \overrightarrow{opos}\)
 \end{enumerate}
