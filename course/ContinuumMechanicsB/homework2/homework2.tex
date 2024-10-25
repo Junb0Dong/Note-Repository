@@ -1,0 +1,77 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[onecolumn,oneside]{SUSTechHomework}
+\usepackage{blindtext}
+\usepackage{enumerate}
+ 
+\author{董骏博}
+\sid{12432995}
+\title{Homework 2}
+\coursecode{MAE5009}
+\coursename{Continuum Mechanics B}
+
+\begin{document}
+  \maketitle
+  \subsection*{2-9}
+  Since, 
+   \[
+   \epsilon_n = \frac{\epsilon_x + \epsilon_y}{2} + \frac{\epsilon_x - \epsilon_y}{2}  \cos2\alpha + \frac{\gamma_{xy}}{2} \sin 2\alpha
+   \]
+   
+   \[
+   \epsilon_t = \frac{\epsilon_x + \epsilon_y}{2} - \frac{\epsilon_x - \epsilon_y}{2}  \cos2\alpha - \frac{\gamma_{xy}}{2} \sin 2\alpha
+   \]
+
+   \[
+   \gamma_{nt} = (\epsilon_y - \epsilon_x) \sin2\alpha + \gamma_{xy}\cos2\alpha
+   \]
+
+   where\(\alpha = 22.5^{\circ}\)
+
+   Therefore, we can get 
+   \[\epsilon_n = 0.001\]
+   \[\epsilon_t = -0.001\]
+   \[\gamma_{nt} = 0.002\]
+
+  \subsection*{2-10}
+
+  \[
+    \epsilon_{ab} = \epsilon_{x' y'} = \frac{\epsilon_x + \epsilon_y}{2} + \frac{\epsilon_x - \epsilon_y}{2}  \cos2\alpha + \frac{\gamma_{xy}}{2} \sin 2\alpha
+  \]
+  where, \[\alpha = arctan\frac{3}{4} = 36.87^{\circ}\]
+  Therefore, we can get \[\epsilon_{ab} = 0.004296\]
+  Since, \[\epsilon_{ab} = \frac{\delta ab}{ab}\]
+  Therefore, \[\delta ab = 0.02148'' \]
+
+  \subsection*{2-6}
+  Since, \[\tan2\alpha = \frac{\gamma_{xy}}{\epsilon_x - \epsilon_y}\]
+  When \(\alpha\) is 45°(\(\gamma_{xy} = \epsilon_x - \epsilon_y\)), the shear stress is maximum, the direction of the maximum shear strain can be determined by the following formula
+  \[\gamma_{max} = \sqrt{(\frac{\epsilon_x - \epsilon_y}{2})^2 + (\frac{\gamma_{xy}}{2})^2}\]
+
+  \subsection*{2-7}
+  \begin{enumerate}[(a)]
+    \item Since, 
+    \[\frac{\delta u}{\delta x} = 2kx, \frac{\delta v}{\delta x} = 2kx, \frac{\delta u}{\delta y} = 2ky, \frac{\delta v}{\delta y} = -6ky\]
+    we can get 
+    \[A' B' = D' C'\sqrt{(dx+\frac{\delta u}{\delta x}dx)^2 + (\frac{\delta v}{\delta x}dx)^2} = dx\sqrt{20k^2 + 4k + 1}\]
+    \[A' D' = B' C'\sqrt{(dy+\frac{\delta v}{\delta y}dy)^2 + (\frac{\delta u}{\delta y}dy)^2} = dy\sqrt{40k^2 - 12k + 1}\]
+    The angular positions of \(A' B'\) and \(A' D'\) is
+    \[
+    \theta = \tan \theta = \frac{\delta v}{\delta x} = 2kx = 4\times 10^{-4}
+    \]
+    \[
+    -\lambda = -\tan \lambda = \frac{\delta u}{\delta y} = 2ky = 2\times 10^{-4}
+    \]
+    % substituting x and y of point A into \[u = k(2x+y^2), v = k(x^2-3y^2)\]
+    
+    % we get \[u_A = 5\times10^{-4}, v_A = 1\times 10^{-4}\]
+    % Since \(A\) is \((2, 1, 0)\)
+
+    \item The coordinates of point A after the displacement is \[x' = x + u_A = 2.0005\] \[y' = 1 + v_A = 1.0001\]
+    So, the coordinates of point \(A' = (2.0005, 1.0001, 0)\) 
+    \item \[w_z = \frac{1}{2}(\frac{\delta v}{\delta x} - \frac{\delta u}{\delta y}) = \frac{1}{2}(2kx-2ky) = 1\times 10^{-4}\]
+  \end{enumerate}
+
+\end{document}
