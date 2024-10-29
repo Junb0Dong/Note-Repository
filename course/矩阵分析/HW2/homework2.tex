@@ -1,0 +1,284 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[onecolumn,oneside]{SUSTechHomework}
+
+\usepackage{blindtext}
+\usepackage{enumerate}
+% \usepackage{lastpage}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyfoot[C]{第 \thepage 页，共 \pageref{LastPage} 页}
+
+\author{董骏博}
+\sid{12432995}
+\title{Homework 2}
+\coursecode{MEE5003}
+\coursename{矩阵分析与应用}
+
+\begin{document}
+
+  \maketitle
+  \section{基与维数运算}
+  \subsection{}
+  \[
+  \mathbf{S} = \text{span} \left\{
+    \begin{pmatrix} 1 \\ 2 \\ -1 \\ 3 \end{pmatrix},
+    \begin{pmatrix} 1 \\ 0 \\ 0 \\ 2 \end{pmatrix},
+    \begin{pmatrix} 2 \\ 8 \\ -4 \\ 8 \end{pmatrix},
+    \begin{pmatrix} 1 \\ 1 \\ 1 \\ 1 \end{pmatrix},
+    \begin{pmatrix} 3 \\ 3 \\ 0 \\ 6 \end{pmatrix}
+  \right\}
+  \]
+  由题可以得到
+  \[
+    4\begin{pmatrix} 1 \\ 2 \\ -1 \\ 3 \end{pmatrix} - 2\begin{pmatrix} 1 \\ 0 \\ 0 \\ 2 \end{pmatrix} = \begin{pmatrix} 2 \\ 8 \\ -4 \\ 8 \end{pmatrix}
+  \]
+  \[
+    \begin{pmatrix} 1 \\ 2 \\ -1 \\ 3 \end{pmatrix} + \begin{pmatrix} 1 \\ 0 \\ 0 \\ 2 \end{pmatrix} + \begin{pmatrix} 1 \\ 1 \\ 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 3 \\ 3 \\ 0 \\ 6 \end{pmatrix}
+  \]
+  并对其进行简化，可以得出\(S\)的维数为\(3\),基为
+  \[ 
+  \begin{pmatrix} 1 \\ 2 \\ -1 \\ 3 \end{pmatrix}, \begin{pmatrix} 1 \\ 0 \\ 0 \\ 2 \end{pmatrix}, \begin{pmatrix} 1 \\ 1 \\ 1 \\ 1 \end{pmatrix}
+  \]
+
+  \subsection{}
+  \subsubsection{}
+  由题目已知
+  \[
+    V_1 = \begin{pmatrix} 1 & -1 & 5 & -1 \\ 1 & 1 & -2 & 3\end{pmatrix}^T
+  \]
+  可以得出\(V_1\)的维数为2，基为
+  \[
+    \begin{pmatrix} 1 \\ -1 \\ 5 \\ -1\end{pmatrix},
+    \begin{pmatrix} 1 \\ 1 \\ -2 \\ 3\end{pmatrix}
+  \]
+  因为
+  \[
+    V_2 = \begin{pmatrix}-3 & 4 & -2 \\ -1 & 3 & 1 \\ 1 & -1 & 1 \\ 0 & 1 & -1\end{pmatrix}
+  \]
+  经过化简，可以得出，\(V_2\)的维数为3，基为
+  \[
+    \alpha_1, \alpha_2, \alpha_3
+  \]
+
+  \subsubsection{}
+  \[
+    V_1 \cap V_2 = \begin{pmatrix}
+     1 & 1 & -3 & 4 & -2 \\ -1 & 1 & -1 & 3 & 1 \\ 5 & -2 & 1 & -1 & 1 \\ -1 & 3 & 0 & 1 & -1
+    \end{pmatrix}
+  \]
+ 同1.1求解方式，可以求得\(V_1 \cap V_2 \)的子空间维数为4，基为
+ \[
+  \begin{pmatrix} 1 & 1 & -3 & 4 \\ -1 & 1 & -1 & 3 \\ 5 & -2 & 1 & -1 \\ -1 & 3 & 0 & 1 \end{pmatrix}
+ \]
+  \subsubsection{}
+  \[\text{dim}(V_1 + V_2) = \text{dim}V_1 + \text{dim}V_2 - \text{dim}(V_1 \cap V_2) = 2 + 3 - 4 = 1 \]
+  
+  \section{}
+  \subsection{}
+  \subsubsection{}
+  线性映射满足加法和数乘法
+  加法：
+  \[
+    T(p_1(t) + p_2(t)) = T(p_1(t)) + T(p_2(t))
+  \]
+  数乘法：
+  \[
+    T(a \times p(t)) = a \times T(p(t))
+  \]
+  因此
+  \[
+  \mathbf{T} = \xi_k \mathbf{D}^k + \xi_{k-1} \mathbf{D}^{k-1} + \cdots + \xi_1 \mathbf{D} + \xi_0 \mathbf{I}
+  \]
+  是线性映射
+  \subsubsection{}
+  同理，加法：
+  \[
+    T(p_1(t) + p_2(t)) = t^np_1'(0) + t + t^np_2'(0) + t \neq  T(p_1(t)) +  T(p_2(t))
+  \]
+  因此，
+  \[
+  \mathbf{T}(p(t)) = t^n p'(0) + t
+  \]不满足加法封闭性，不是线性映射
+
+  \subsection{}
+  由题可以得到
+  \[
+  \begin{bmatrix}
+    \beta_1 & \beta_2 & \beta_3
+  \end{bmatrix}
+    =
+  \begin{bmatrix}
+    \alpha_1 & \alpha_2 & \alpha_3
+  \end{bmatrix}
+  \begin{bmatrix}
+    1 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 1
+  \end{bmatrix}
+  \]
+  可以求得过渡矩阵为
+  \[
+    P = \begin{bmatrix}
+      1 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 1
+    \end{bmatrix}, 
+    P^{-1} = \begin{bmatrix}
+      1 & -1 & 0 \\ 0 & 1 & -1 \\ 0 & 0 & 1
+    \end{bmatrix}
+  \]
+  所以\(\mathcal{A}\)在基\(\beta\)下的表示矩阵为：
+  \[
+    PAP^{-1} = \begin{bmatrix}
+      6 & 13 & 12 \\ -3 & -4 & -5 \\ 2 & 3 & 6
+    \end{bmatrix}
+  \]
+  
+  \subsection{}
+  \subsubsection{}
+  1. 绕原点逆时针旋转\(\frac{\pi}{4}\)时
+  \[
+    T_1 = \begin{bmatrix}
+      \cos(\frac{\pi}{4}) & \cos(\frac{\pi}{4}) \\
+      \sin(\frac{\pi}{4}) & \cos(\frac{\pi}{4})
+    \end{bmatrix}
+    = \begin{bmatrix}
+      \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\
+      \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+    \end{bmatrix}
+  \]
+  2. 保持\(y\)坐标不变，将\(y\)坐标的3倍加到\(x\)坐标上时
+  \[
+    T_2 = \begin{bmatrix}
+      1 & 3 \\ 0 & 1
+    \end{bmatrix}
+  \]
+  3. 镜像矩阵为
+  \[
+    T_3 = I - 2\frac{nn^T}{n^Tn} = \frac{1}{5}\begin{bmatrix}
+      1 & -2 \\ -2 & -4
+    \end{bmatrix}
+  \]
+  因此，可以得到
+  \[
+    T = T_3T_2T_1 = \frac{1}{5}\begin{bmatrix}
+      \sqrt{2} & 0 \\ -6\sqrt{2} & -4\sqrt{2}
+    \end{bmatrix}
+  \]
+  为线性变换
+
+  \subsubsection{}
+  \[
+  \mathcal{B}(e_1) = Te_1 =     \frac{1}{5}\begin{bmatrix}
+    1 & -2 \\ -2 & -4
+  \end{bmatrix}
+  \begin{bmatrix}
+    1 & 3 \\ 0 & 1
+  \end{bmatrix}
+  \begin{bmatrix}
+    \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\
+    \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+  \end{bmatrix}
+  \begin{bmatrix}
+    1 \\ 0
+  \end{bmatrix}
+  = \begin{bmatrix}
+    \frac{\sqrt{2}}{5} \\ -\frac{6\sqrt{2}}{5}
+  \end{bmatrix}
+  \]
+  \[
+    \mathcal{B}(e_2) = Te_2 =     \frac{1}{5}\begin{bmatrix}
+      1 & -2 \\ -2 & -4
+    \end{bmatrix}
+    \begin{bmatrix}
+      1 & 3 \\ 0 & 1
+    \end{bmatrix}
+    \begin{bmatrix}
+      \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\
+      \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+    \end{bmatrix}
+    \begin{bmatrix}
+      0 \\ 1
+    \end{bmatrix}
+    = \begin{bmatrix}
+      0 \\ -\frac{4\sqrt{2}}{5}
+    \end{bmatrix}
+  \]
+  \subsubsection{}
+  \(\mathcal{B}\)的表示矩阵为
+  \[  
+  \frac{1}{5}\begin{bmatrix}
+    \sqrt{2} & 0 \\ -6\sqrt{2} & -4\sqrt{2}
+  \end{bmatrix}
+  \]
+  \[
+    \mathcal{B}(a) =   \frac{1}{5}\begin{bmatrix}
+      \sqrt{2} & 0 \\ -6\sqrt{2} & -4\sqrt{2}
+    \end{bmatrix}
+    \begin{bmatrix}
+      3 \\ 5
+    \end{bmatrix}
+     = \begin{bmatrix}
+      \frac{3\sqrt{2}}{5} \\ -\frac{38\sqrt{2}}{5}
+     \end{bmatrix}
+  \]
+
+  \section{}
+  \subsection{}
+  \subsubsection{}
+  通过\(det(A-\lambda I) = 0\)即可求出\(A\)的特征值为
+  \[
+  \lambda_1 = \lambda_2 = \lambda_3 = 2
+  \]
+  通过\((A-\lambda I)x = 0\)即可求出\(A\)的特征向量为
+  \[
+     \begin{bmatrix}
+      0 & 1 & 1 \\ 0 & 2 & 2 \\ 1 & 0 & 1
+     \end{bmatrix}
+  \]
+  因为\(A\)只存在两个线性无关的特征向量，所以\(A\)不能进行对角化
+
+  \subsubsection{}
+  同理。可以求出\(B\)的特征值为
+  \[
+     \lambda_1 = -1 , \lambda_2 = 2
+  \]
+  \(B\)的特征向量为
+  \[
+     \begin{bmatrix}
+      1 & 1 & 1 \\ -1 & 0 & 1 \\ 0 & -1 & 1
+     \end{bmatrix}
+  \]
+  特征向量的维数为3，所以\(B\)可以进行对角化
+  \[
+     B' = P^{-1}BP = \begin{bmatrix}
+      -1 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 2
+     \end{bmatrix}
+  \]
+
+  \subsubsection{}
+  同理。可以求出\(C\)的特征值为
+  \[
+     \lambda_1 = 0 , \lambda_2 = i\sqrt{14}, \lambda_3 = -i\sqrt{14}
+  \]
+  \(C\)不能进行对角化
+  % \(C\)的特征向量为
+  % \[
+  %    \begin{bmatrix}
+  %     3 & \frac{2}{i\sqrt{14}} & \frac{1}{i\sqrt{14}} \\ -1 & 1 & 0\\ 2 & 0 & 1
+  %    \end{bmatrix}
+  % \]
+  
+  \subsection{}
+  因为
+  \[ AP_i = \lambda_i P_i \]
+  \[ A^{-1}AP_i = A^{-1}\lambda_i P_i \] 
+  \[ IP_i = A^{-1}\lambda_i P_i = \lambda_i A^{-1}P_i \]
+  所以可以得到
+  \[
+     \frac{1}{\lambda_i} P_i = A^{-1}P_i
+  \]
+  所以，\(A^{-1}\)的特征值为\(\frac{1}{\lambda_i}\)，\(A^{-1}\)的特征向量为\(P_i\)
+
+
+
+\end{document}
