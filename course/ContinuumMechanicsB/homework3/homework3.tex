@@ -1,0 +1,220 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[onecolumn,oneside]{SUSTechHomework}
+\usepackage{blindtext}
+\usepackage{enumerate}
+ 
+\author{董骏博}
+\sid{12432995}
+\title{Homework 3}
+\coursecode{MAE5009}
+\coursename{Continuum Mechanics B}
+
+\begin{document}
+  \maketitle
+
+  \section*{3-2}
+  According to the conditions of the question,\(\sigma_y = \sigma_z = 0\), we can get: 
+  \[
+  \varepsilon_x = \frac{1}{E} \sigma_x - \frac{\nu}{E} \cdot 0 + \alpha T = \frac{\sigma_x}{E} + \alpha T
+  \]
+  \[
+  \varepsilon_y = \frac{1}{E} \cdot 0 - \frac{\nu}{E} \sigma_x + \alpha T = -\frac{\nu \sigma_x}{E} + \alpha T
+  \]
+  \[
+  \varepsilon_z = \frac{1}{E} \cdot 0 - \frac{\nu}{E} \sigma_x + \alpha T = -\frac{\nu \sigma_x}{E} + \alpha T
+  \]  
+  Due to :
+  \[
+  \varepsilon_x = 0
+  \]
+  Therefore:
+  \[
+  0 = \frac{\sigma_x}{E} + \alpha T
+  \]
+  \[
+  \sigma_x = -E \alpha T
+  \]
+
+  Substituting \(\sigma_x = -E \alpha T\) into the expressions for \(\varepsilon_y\) and \(\varepsilon_z\):
+  \[
+  \varepsilon_y = -\frac{\nu \sigma_x}{E} + \alpha T = -\frac{\nu (-E \alpha T)}{E} + \alpha T
+  = \nu \alpha T + \alpha T
+  = \alpha T (1 + \nu)
+  \]
+  
+  Similarly:
+  \[
+  \varepsilon_z = \alpha T (1 + \nu)
+  \]
+  
+  \section*{3-1}
+  Let \[
+  \varepsilon_{0-1} = \varepsilon_x = \varepsilon_{x_1} , \quad \varepsilon_{0-2} = \varepsilon_{x_2}, \quad \varepsilon_{0-3} = \varepsilon_{x_3}
+  \]
+  We know:
+  \[
+  \varepsilon_{x'} = \frac{\varepsilon_x + \varepsilon_y}{2} + \frac{\varepsilon_x - \varepsilon_y}{2} \cos 2\alpha + \varepsilon_{xy} \sin 2\alpha
+  \]
+  % \[
+  % \varepsilon_{y'} = \frac{\varepsilon_x + \varepsilon_y}{2} - \frac{\varepsilon_x - \varepsilon_y}{2} \cos 2\alpha - \varepsilon_{xy} \sin 2\alpha
+  % \]
+  Then, we can get:
+  \[
+    \varepsilon_{0-2} = \varepsilon_{x_2} = \frac{\varepsilon_x + \varepsilon_y}{2} + \frac{\varepsilon_x - \varepsilon_y}{2} \cos 60^\circ + \varepsilon_{xy} \sin 60^\circ
+  \]
+  \[
+    \varepsilon_{0-3} = \varepsilon_{x_3} = \frac{\varepsilon_x + \varepsilon_y}{2} + \frac{\varepsilon_x - \varepsilon_y}{2} \cos 120^\circ + \varepsilon_{xy} \sin 120^\circ
+  \]
+  \[
+  \varepsilon_{y_1} = 5\times 10^{-4} \quad \varepsilon_{xy} = \frac{4\sqrt{3}}{3}\times 10^{-4}
+  \]
+  Due to:
+  \[
+    \begin{cases}
+    \sigma_x = 2G \varepsilon_x + \lambda (\varepsilon_x + \varepsilon_y)\\
+    \sigma_y = 2G \varepsilon_y + \lambda (\varepsilon_x + \varepsilon_y)\\
+    \tau_{xy} = G \gamma_{xy} = 2G\varepsilon_{xy}
+    \end{cases}
+  \]
+  we can get:
+  \[
+    \sigma_x = 96 \times 10^{-4} \text{ GPa}, \quad \sigma_y = 19 \times 10^{-4} \text{ GPa}, \quad \tau_{xy} = 32\sqrt{3} \times 10^{-4} \text{ GPa}
+  \]
+  Therefore, the principle stress:
+  \[
+  \sigma_{\text{max}} = \frac{\sigma_x + \sigma_y}{2} + \sqrt{\left( \frac{\sigma_x - \sigma_y}{2} \right)^2 + \tau_{xy}^2} = 21.73 \text{ MPa}
+  \]
+
+  \[
+  \sigma_{\text{min}} = \frac{\sigma_x + \sigma_y}{2} - \sqrt{\left( \frac{\sigma_x - \sigma_y}{2} \right)^2 + \tau_{xy}^2} = 7.07 \text{ MPa}
+  \]
+  The direction of principle stress:
+  \[
+  \tan 2\alpha = \frac{\gamma_{xy}}{\sigma_x - \sigma_y} = \frac{2\tau_{xy}}{\sigma_x - \sigma_y} \Rightarrow \alpha = -24.55^\circ\, \text{or}\, 65.45^\circ 
+  \]
+  The maximum shear stress:
+  \[
+    \tau_{\text{max}} = \frac{\sigma_x - \sigma_y}{2} + \sqrt{\left( \frac{\sigma_x - \sigma_y}{2} \right)^2 + \tau_{xy}^2} = 7.33 \text{ MPa}
+  \]
+  The direction of maximum shear stress:
+  \[
+  \tan 2\alpha = -\frac{\sigma_x - \sigma_y}{2 \tau_{xy}} \Rightarrow \alpha = -20.45^\circ \, \text{or}\, 69.55^\circ 
+  \]
+
+  \section*{3-3}
+  Since the bar is restrained in the \(x,y\) but free to expand in \(z\), we can get:
+  \[
+    \sigma_z = 0 \quad \varepsilon_x = 0 \quad \varepsilon_y = 0
+  \]
+  \[
+    \begin{cases}
+      \varepsilon_z = -\frac{v}{E}(\sigma_x+\sigma_y)+\alpha T \\
+      \varepsilon_x = 0 = \frac{1}{E}(\sigma_x - v\sigma_y)+\alpha T\\
+      \varepsilon_y = 0 = \frac{1}{E}(\sigma_y - v\sigma_x)+\alpha T
+    \end{cases}
+  \]
+  Therefore:
+  \[
+      \sigma_x = \sigma_y = \frac{E\alpha T}{v-1}
+  \]
+  \[
+    \varepsilon_z = \frac{1+v}{1-v}\alpha T
+  \]
+  
+  \section*{3-9}
+  % We know that:
+  % \[
+  % \delta_{x'} = \frac{\delta_x + \delta_y}{2} + \frac{\delta_x - \delta_y}{2}\cos 2\theta + \tau_{xy}\sin 2\theta
+  % \]
+  (a)\newline
+  Since \(\delta_X = 0\, \delta_y = 0\, \tau_{xy} = p = 14140\text{psi}\) we can get:
+  \[
+  \delta_{x'} = \frac{\delta_x + \delta_y}{2} + \frac{\delta_x - \delta_y}{2}\cos 2\theta + \tau_{xy}\sin 2\theta = 28280\text{psi}
+  \]
+  \[
+  \varepsilon_x = \frac{1}{E}\delta_x = 9.43\times10^{-4}
+  \]
+  \[
+  \varepsilon_y = -v\varepsilon_x = -2.83\times10^{-4}
+  \]
+  \[
+  \gamma_{xy} = \frac{\tau}{G} = 1.23\times10^{-3}
+  \]
+  Therefore
+  \[
+  \delta_{AB} = (\frac{\varepsilon_x+\varepsilon_y}{2} + \frac{\varepsilon_x-\varepsilon_y}{2}\cos 2\theta + \frac{\gamma_{xy}}{2}\sin 2\theta)L_{AB} = 1.9\times10^{-4}
+  \]
+  (b)\newline
+  Since,
+  \[
+  \varepsilon_{1,2} = \frac{\varepsilon_x + \epsilon_y}{2} \pm \sqrt{\left( \frac{\varepsilon_x - \varepsilon_y}{2} \right)^2 + \left( \frac{\gamma_{xy}}{2} \right)^2}
+  \]
+  we can get:
+  \[
+  \varepsilon_1 = 1.2\times10^{-4} \quad \varepsilon_2 = -5.4\times10^{-4}
+  \]
+  The direction of principle strain is:
+  \[
+    \tan 2\alpha = \frac{\gamma_{xy}}{\varepsilon_x - \varepsilon_y} = -22.5^\circ\, \text{or}\, 67.5^\circ
+  \]
+  \section*{3-11}
+  We know that:
+  \[
+  G = \frac{E}{2(1+v)}, \quad \lambda = \frac{vE}{(1+v)(1-2v)}, \quad \text{and} \quad K = \frac{E}{3(1-2v)}
+  \]
+
+  Since \( K = \frac{E}{3(1-2v)} \), then 
+  \[
+  1 - 2v = \frac{E}{3K} \quad \Rightarrow \quad -2v = \frac{-3K + E}{3K}
+  \]
+  we can get 
+  \[
+  v = \frac{3K - E}{6K}
+  \]
+
+  Since \( G = \frac{E}{2(1+v)} \) and \( K = \frac{E}{3(1-2v)} \), then 
+  \[
+  2G = \frac{E}{(1+v)} \quad \text{and} \quad 3K = \frac{E}{(1-2v)}
+  \]
+  \[
+  \quad 3K - 2G = \frac{3vE}{(1+v)(1-2v)} = 3\lambda
+  \]
+  we can get 
+  \[
+  \lambda = \frac{3K - 2G}{3}
+  \]
+  Since \(\lambda = \frac{vE}{(1+v)(1-2v)}\), then
+  \[
+    E = \frac{\lambda(1+v)(1-2v)}{v}
+  \]
+
+  % Since \( K = \frac{E}{3(1-2v)} \), then 
+  % \[
+  % 3K = \frac{E}{(1-2v)}, \quad \lambda = \frac{3Kv}{1+v}
+  % \]
+  % Due to 
+  % \[
+  % v = \frac{3K - E}{6K}
+  % \]
+  % then 
+  % \[
+  % \lambda = 3K \frac{3K - E}{9K - E}
+  % \]
+
+  % Since \( G = \frac{E}{2(1+v)} \) and \( v = \frac{3K - E}{6K} \), then 
+  % \[
+  % G = \frac{3KE}{9K - E}
+  % \]
+
+  % \[
+  % 9KG - GE = 3KE, \quad K(9G - 3E) = GE
+  % \]
+  % then we can get 
+  % \[
+  % K = \frac{GE}{9G - 3E} = \frac{EG}{3(3G - E)}
+  % \]
+
+\end{document}
