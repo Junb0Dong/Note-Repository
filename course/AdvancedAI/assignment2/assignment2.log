@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.11)  28 OCT 2024 19:17
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.18)  21 NOV 2024 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**homework2
-(./homework2.tex
+**assignment2
+(./assignment2.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (./SUSTechHomework.cls
@@ -603,33 +603,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package: inconsolata 2019/05/17 v1.12
  `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
 \zifour@ocount=\count337
-)) (c:/texlive/2024/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
- (c:/texlive/2024/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count338
-\c@Blindtext=\count339
-\c@blind@countparstart=\count340
-\blind@countxx=\count341
-\blindtext@numBlindtext=\count342
-\blind@countyy=\count343
-\c@blindlist=\count344
-\c@blindlistlevel=\count345
-\c@blindlist@level=\count346
-\blind@listitem=\count347
-\c@blind@listcount=\count348
-\c@blind@levelcount=\count349
-\blind@mathformula=\count350
-\blind@Mathformula=\count351
-\c@blind@randomcount=\count352
-\c@blind@randommax=\count353
-\c@blind@pangramcount=\count354
-\c@blind@pangrammax=\count355
-) (c:/texlive/2024/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
-\@enLab=\toks29
-) (c:/texlive/2024/texmf-dist/tex/latex/newpx/TeXGyrePagellaX.fontspec)
+)) (c:/texlive/2024/texmf-dist/tex/latex/newpx/TeXGyrePagellaX.fontspec)
 
 Package fontspec Info: Font family 'TeXGyrePagellaX(0)' created for font
 (fontspec)             'TeXGyrePagellaX' with options [Ligatures=TeX,Extension
@@ -696,55 +670,55 @@ Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
 (fontspec)             <->"[FandolKai-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-(./homework2.aux)
-\openout1 = `homework2.aux'.
+(./assignment2.aux)
+\openout1 = `assignment2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 20.
-LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 20.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 13.
+LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 13.
  (c:/texlive/2024/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 20.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 13.
  (c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for U+npxexa on input line 20.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 13.
+LaTeX Font Info:    Trying to load font information for U+npxexa on input line 13.
  (c:/texlive/2024/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 20.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 13.
+LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 13.
  (c:/texlive/2024/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 20.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 13.
+LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 13.
  (c:/texlive/2024/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Info: Command `\dddot' is already robust on input line 20.
-LaTeX Info: Command `\ddddot' is already robust on input line 20.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Info: Command `\dddot' is already robust on input line 13.
+LaTeX Info: Command `\ddddot' is already robust on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -781,11 +755,11 @@ LaTeX Info: Command `\ddddot' is already robust on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count356
-Package hyperref Info: Link coloring OFF on input line 20.
-(./homework2.out) (./homework2.out)
+\c@lstlisting=\count338
+Package hyperref Info: Link coloring OFF on input line 13.
+(./assignment2.out) (./assignment2.out)
 \@outlinefile=\write3
-\openout3 = `homework2.out'.
+\openout3 = `assignment2.out'.
 
  (c:/texlive/2024/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
@@ -809,28 +783,28 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 (fontspec)             <->"[FandolHei-Bold.otf]/OT:language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 22.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 14.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for U+npxmia on input line 22.
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 14.
  (c:/texlive/2024/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsym on input line 22.
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 14.
  (c:/texlive/2024/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 22.
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 14.
  (c:/texlive/2024/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
@@ -839,11 +813,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 ]
 
 LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/m/sc' undefined
-(Font)              using `TU/FandolSong-Regular(0)/m/n' instead on input line 148.
+(Font)              using `TU/FandolSong-Regular(0)/m/n' instead on input line 164.
 
-[2] [3] [4] 
+[2] [3] [4] [5] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(./homework2.aux)
+(./assignment2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -852,16 +826,16 @@ L3 programming layer <2022/08/05>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `homework2.out' has not changed.
-(rerunfilecheck)             Checksum: 1455B450DF7B79237B316EE5EDC0A26A;1165.
+Package rerunfilecheck Info: File `assignment2.out' has not changed.
+(rerunfilecheck)             Checksum: 6213A69C2A74EA306625D7FB89F4BD97;273.
  ) 
 Here is how much of TeX's memory you used:
- 19534 strings out of 474772
- 376099 string characters out of 5761267
- 1951842 words of memory out of 5000000
- 41367 multiletter control sequences out of 15000+600000
+ 19280 strings out of 475890
+ 370925 string characters out of 5790246
+ 1946842 words of memory out of 5000000
+ 41026 multiletter control sequences out of 15000+600000
  606700 words of font info for 126 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 95i,13n,107p,535b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 730 hyphenation exceptions out of 8191
+ 95i,18n,107p,558b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on homework2.pdf (4 pages).
+Output written on assignment2.pdf (5 pages).
